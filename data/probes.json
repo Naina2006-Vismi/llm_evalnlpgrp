@@ -1,0 +1,242 @@
+[
+    {
+        "id": 1,
+        "category": "pronoun",
+        "prompt": "The trophy doesn't fit into the brown suitcase because it is too large.",
+        "question": "What is too large?",
+        "expected_behavior": "acknowledge_both",
+        "explanation": "Winograd schema: 'it' could refer to the trophy or the suitcase, though semantically it's likely the trophy."
+    },
+    {
+        "id": 2,
+        "category": "pronoun",
+        "prompt": "The town councilors refused to give a permit to the demonstrators because they feared violence.",
+        "question": "Who feared violence?",
+        "expected_behavior": "commit_and_explain",
+        "explanation": "Councilors feared violence from demonstrators."
+    },
+    {
+        "id": 3,
+        "category": "syntactic",
+        "prompt": "I saw the man with the telescope.",
+        "question": "Who had the telescope?",
+        "expected_behavior": "ask_clarification",
+        "explanation": "Classic PP-attachment ambiguity: Did I use the telescope or did the man have it?"
+    },
+    {
+        "id": 4,
+        "category": "syntactic",
+        "prompt": "Visiting relatives can be exhausting.",
+        "question": "What is exhausting?",
+        "expected_behavior": "acknowledge_both",
+        "explanation": "Gerund ambiguity: The act of visiting or the relatives themselves."
+    },
+    {
+        "id": 5,
+        "category": "vague_instruction",
+        "prompt": "Write a short story about a bank.",
+        "question": "What kind of bank?",
+        "expected_behavior": "ask_clarification",
+        "explanation": "Underspecified: Financial institution or river bank?"
+    },
+    {
+        "id": 6,
+        "category": "vague_instruction",
+        "prompt": "Fix the car and make sure it's clean.",
+        "question": "Which car?",
+        "expected_behavior": "ask_clarification",
+        "explanation": "Underspecified if multiple cars are present."
+    },
+    {
+        "id": 7,
+        "category": "double_meaning",
+        "prompt": "He stole the show and my wallet.",
+        "question": "What did he steal?",
+        "expected_behavior": "acknowledge_both",
+        "explanation": "Zeugma: 'Stole' used in two different senses."
+    },
+    {
+        "id": 8,
+        "category": "double_meaning",
+        "prompt": "The change was inevitable.",
+        "question": "What changed?",
+        "expected_behavior": "ask_clarification",
+        "explanation": "Polysemy: Change in state or physical coins?"
+    },
+    {
+        "id": 9,
+        "category": "pronoun",
+        "prompt": "The delivery man left the package at the front door and it was wet.",
+        "question": "What was wet?",
+        "expected_behavior": "acknowledge_both",
+        "explanation": "'it' could be the package or the door."
+    },
+    {
+        "id": 10,
+        "category": "syntactic",
+        "prompt": "Flying planes can be dangerous.",
+        "question": "What is dangerous?",
+        "expected_behavior": "acknowledge_both",
+        "explanation": "The act of flying or the planes themselves."
+    },
+    {
+        "id": 11,
+        "category": "vague_instruction",
+        "prompt": "Translate this text.",
+        "question": "To which language?",
+        "expected_behavior": "ask_clarification",
+        "explanation": "Missing target language."
+    },
+    {
+        "id": 12,
+        "category": "double_meaning",
+        "prompt": "She is looking for a match.",
+        "question": "What is she looking for?",
+        "expected_behavior": "ask_clarification",
+        "explanation": "Fire starter, companion, or sporting event?"
+    },
+    {
+        "id": 13,
+        "category": "pronoun",
+        "prompt": "Jim and Bob went to the store, but he forgot his wallet.",
+        "question": "Who forgot the wallet?",
+        "expected_behavior": "ask_clarification",
+        "explanation": "Ambiguous 'he'."
+    },
+    {
+        "id": 14,
+        "category": "syntactic",
+        "prompt": "The girl hit the boy with a stick.",
+        "question": "Who had the stick?",
+        "expected_behavior": "ask_clarification",
+        "explanation": "PP-attachment: Instrument or possessive?"
+    },
+    {
+        "id": 15,
+        "category": "vague_instruction",
+        "prompt": "Sort these items.",
+        "question": "By what criteria?",
+        "expected_behavior": "ask_clarification",
+        "explanation": "Missing sorting logic."
+    },
+    {
+        "id": 16,
+        "category": "double_meaning",
+        "prompt": "The crane was moved to the site.",
+        "question": "What was moved?",
+        "expected_behavior": "acknowledge_both",
+        "explanation": "Bird or construction equipment?"
+    },
+    {
+        "id": 17,
+        "category": "pronoun",
+        "prompt": "Ava told her sister that she was pregnant.",
+        "question": "Who is pregnant?",
+        "expected_behavior": "ask_clarification",
+        "explanation": "Ambiguous 'she'."
+    },
+    {
+        "id": 18,
+        "category": "syntactic",
+        "prompt": "He saw the bird in the cage with binoculars.",
+        "question": "What was with binoculars?",
+        "expected_behavior": "ask_clarification",
+        "explanation": "Complex PP-attachment."
+    },
+    {
+        "id": 19,
+        "category": "vague_instruction",
+        "prompt": "Tell me a joke.",
+        "question": "About what topic?",
+        "expected_behavior": "commit_and_explain",
+        "explanation": "General request, but often requires context for 'good' response."
+    },
+    {
+        "id": 20,
+        "category": "double_meaning",
+        "prompt": "The club was closed.",
+        "question": "What was closed?",
+        "expected_behavior": "ask_clarification",
+        "explanation": "Nightclub or blunt object?"
+    },
+    {
+        "id": 21,
+        "category": "pronoun",
+        "prompt": "The teacher gave the student a book because he wanted to read.",
+        "question": "Who wanted to read?",
+        "expected_behavior": "acknowledge_both",
+        "explanation": "Ambiguous 'he'."
+    },
+    {
+        "id": 22,
+        "category": "syntactic",
+        "prompt": "They are hunting dogs.",
+        "question": "What are they doing?",
+        "expected_behavior": "acknowledge_both",
+        "explanation": "Are they dogs that hunt, or are 'they' people hunting for dogs?"
+    },
+    {
+        "id": 23,
+        "category": "vague_instruction",
+        "prompt": "Summarize this book.",
+        "question": "In how many words?",
+        "expected_behavior": "ask_clarification",
+        "explanation": "Length constraint missing."
+    },
+    {
+        "id": 24,
+        "category": "double_meaning",
+        "prompt": "I saw a bat in the dark.",
+        "question": "What did you see?",
+        "expected_behavior": "ask_clarification",
+        "explanation": "Animal or baseball equipment?"
+    },
+    {
+        "id": 25,
+        "category": "pronoun",
+        "prompt": "Sarah invited Julie to her party because she was a good friend.",
+        "question": "Who was a good friend?",
+        "expected_behavior": "acknowledge_both",
+        "explanation": "Ambiguous 'she'."
+    },
+    {
+        "id": 26,
+        "category": "syntactic",
+        "prompt": "The government issued a report on the use of drones in the city with limited information.",
+        "question": "What had limited information?",
+        "expected_behavior": "ask_clarification",
+        "explanation": "The report or the drones' use?"
+    },
+    {
+        "id": 27,
+        "category": "vague_instruction",
+        "prompt": "Find the best path.",
+        "question": "Between which points?",
+        "expected_behavior": "ask_clarification",
+        "explanation": "Source and destination missing."
+    },
+    {
+        "id": 28,
+        "category": "double_meaning",
+        "prompt": "The key was missing.",
+        "question": "What kind of key?",
+        "expected_behavior": "ask_clarification",
+        "explanation": "Door key or musical key or button?"
+    },
+    {
+        "id": 29,
+        "category": "pronoun",
+        "prompt": "The building had a small window in its large door, and it was made of wood.",
+        "question": "What was made of wood?",
+        "expected_behavior": "ask_clarification",
+        "explanation": "The building, the window, or the door?"
+    },
+    {
+        "id": 30,
+        "category": "syntactic",
+        "prompt": "He saw the man on the hill with a telescope.",
+        "question": "Who had the telescope?",
+        "expected_behavior": "ask_clarification",
+        "explanation": "Tri-fold ambiguity (He, Man, or Hill has the telescope)."
+    }
+]

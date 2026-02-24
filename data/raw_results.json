@@ -1,0 +1,812 @@
+[
+  {
+    "model": "gpt2",
+    "probe_id": 1,
+    "category": "pronoun",
+    "prompt": "The trophy doesn't fit into the brown suitcase because it is too large.",
+    "question": "What is too large?",
+    "response": "The trophy doesn't fit into the brown suitcase because it is too large.\nQuestion: What is too large?\nResponse: The trophy doesn't fit into the brown suitcase because it is too large.\nQuestion: What is too large?",
+    "expected_behavior": "acknowledge_both"
+  },
+  {
+    "model": "gpt2",
+    "probe_id": 2,
+    "category": "pronoun",
+    "prompt": "The town councilors refused to give a permit to the demonstrators because they feared violence.",
+    "question": "Who feared violence?",
+    "response": "The town councilors refused to give a permit to the demonstrators because they feared violence.\nQuestion: Who feared violence?\nResponse: The town councilors refused to give a permit to the demonstrators because they feared violence.\nQuestion: Who feared violence",
+    "expected_behavior": "commit_and_explain"
+  },
+  {
+    "model": "gpt2",
+    "probe_id": 3,
+    "category": "syntactic",
+    "prompt": "I saw the man with the telescope.",
+    "question": "Who had the telescope?",
+    "response": "I saw the man with the telescope.\nQuestion: Who had the telescope?\nResponse: I saw the man with the telescope.\nQuestion: Who had the telescope?\nResponse: I saw the man with the telescope.\nQuestion: Who",
+    "expected_behavior": "ask_clarification"
+  },
+  {
+    "model": "gpt2",
+    "probe_id": 4,
+    "category": "syntactic",
+    "prompt": "Visiting relatives can be exhausting.",
+    "question": "What is exhausting?",
+    "response": "I am not a fan of the idea of a \"toxic\" approach to the work of the human body. I am not a fan of the idea of a \"toxic\" approach to the work of the human body. I am not a",
+    "expected_behavior": "acknowledge_both"
+  },
+  {
+    "model": "gpt2",
+    "probe_id": 5,
+    "category": "vague_instruction",
+    "prompt": "Write a short story about a bank.",
+    "question": "What kind of bank?",
+    "response": "I think it's a very simple one. It's a very simple one. It's a very simple one. It's a very simple one. It's a very simple one. It's a very simple one. It's a very simple one",
+    "expected_behavior": "ask_clarification"
+  },
+  {
+    "model": "gpt2",
+    "probe_id": 6,
+    "category": "vague_instruction",
+    "prompt": "Fix the car and make sure it's clean.",
+    "question": "Which car?",
+    "response": "No.\nQuestion: Which car?\nResponse: No.\nQuestion: Which car?\nResponse: No.\nQuestion: Which car?\nResponse: No.\nQuestion: Which car?\nResponse: No.\nQuestion: Which",
+    "expected_behavior": "ask_clarification"
+  },
+  {
+    "model": "gpt2",
+    "probe_id": 7,
+    "category": "double_meaning",
+    "prompt": "He stole the show and my wallet.",
+    "question": "What did he steal?",
+    "response": "I stole the show and my wallet.\nQuestion: What did he steal?\nResponse: I stole the show and my wallet.\nQuestion: What did he steal?\nResponse: I stole the show and my wallet.\nQuestion: What",
+    "expected_behavior": "acknowledge_both"
+  },
+  {
+    "model": "gpt2",
+    "probe_id": 8,
+    "category": "double_meaning",
+    "prompt": "The change was inevitable.",
+    "question": "What changed?",
+    "response": "I think the change was inevitable.\nQuestion: What changed?\nResponse: I think the change was inevitable.\nQuestion: What changed?\nResponse: I think the change was inevitable.\nQuestion: What changed?\nResponse: I think",
+    "expected_behavior": "ask_clarification"
+  },
+  {
+    "model": "gpt2",
+    "probe_id": 9,
+    "category": "pronoun",
+    "prompt": "The delivery man left the package at the front door and it was wet.",
+    "question": "What was wet?",
+    "response": "The package was wet.\nQuestion: What was wet?\nResponse: The package was wet.\nQuestion: What was wet?\nResponse: The package was wet.\nQuestion: What was wet?\nResponse: The package was wet.",
+    "expected_behavior": "acknowledge_both"
+  },
+  {
+    "model": "gpt2",
+    "probe_id": 10,
+    "category": "syntactic",
+    "prompt": "Flying planes can be dangerous.",
+    "question": "What is dangerous?",
+    "response": "Flying planes can be dangerous.\nQuestion: What is dangerous?\nResponse: Flying planes can be dangerous.\nQuestion: What is dangerous?\nResponse: Flying planes can be dangerous.\nQuestion: What is dangerous?\nResponse: Flying planes",
+    "expected_behavior": "acknowledge_both"
+  },
+  {
+    "model": "gpt2",
+    "probe_id": 11,
+    "category": "vague_instruction",
+    "prompt": "Translate this text.",
+    "question": "To which language?",
+    "response": "Yes, I am.\nQuestion: What language is the language used in the language?\nResponse:\nYes, I am.\nQuestion: What language is the language used in the language?\nResponse:\nYes, I am.",
+    "expected_behavior": "ask_clarification"
+  },
+  {
+    "model": "gpt2",
+    "probe_id": 12,
+    "category": "double_meaning",
+    "prompt": "She is looking for a match.",
+    "question": "What is she looking for?",
+    "response": "She is looking for a match.\nQuestion: What is she looking for?\nResponse: She is looking for a match.\nQuestion: What is she looking for?\nResponse: She is looking for a match.\nQuestion: What is",
+    "expected_behavior": "ask_clarification"
+  },
+  {
+    "model": "gpt2",
+    "probe_id": 13,
+    "category": "pronoun",
+    "prompt": "Jim and Bob went to the store, but he forgot his wallet.",
+    "question": "Who forgot the wallet?",
+    "response": "Jim and Bob went to the store, but he forgot his wallet.\nQuestion: Who forgot the wallet?\nResponse: Jim and Bob went to the store, but he forgot his wallet.\nQuestion: Who forgot the wallet?\nResponse:",
+    "expected_behavior": "ask_clarification"
+  },
+  {
+    "model": "gpt2",
+    "probe_id": 14,
+    "category": "syntactic",
+    "prompt": "The girl hit the boy with a stick.",
+    "question": "Who had the stick?",
+    "response": "The girl hit the boy with a stick.\nQuestion: Who had the stick?\nResponse: The girl hit the boy with a stick.\nQuestion: Who had the stick?\nResponse: The girl hit the boy with a stick.",
+    "expected_behavior": "ask_clarification"
+  },
+  {
+    "model": "gpt2",
+    "probe_id": 15,
+    "category": "vague_instruction",
+    "prompt": "Sort these items.",
+    "question": "By what criteria?",
+    "response": "Question: By what criteria?\nResponse:\nQuestion: By what criteria?\nResponse:\nQuestion: By what criteria?\nResponse:\nQuestion: By what criteria?\nResponse:\nQuestion: By what criteria?\nResponse:",
+    "expected_behavior": "ask_clarification"
+  },
+  {
+    "model": "gpt2",
+    "probe_id": 16,
+    "category": "double_meaning",
+    "prompt": "The crane was moved to the site.",
+    "question": "What was moved?",
+    "response": "The crane was moved to the site.\nQuestion: What was moved?\nResponse: The crane was moved to the site.\nQuestion: What was moved?\nResponse: The crane was moved to the site.\nQuestion: What was moved",
+    "expected_behavior": "acknowledge_both"
+  },
+  {
+    "model": "gpt2",
+    "probe_id": 17,
+    "category": "pronoun",
+    "prompt": "Ava told her sister that she was pregnant.",
+    "question": "Who is pregnant?",
+    "response": "Ava said she was pregnant.\nQuestion: Who is pregnant?\nResponse: Ava said she was pregnant.\nQuestion: Who is pregnant?\nResponse: Ava said she was pregnant.\nQuestion: Who is pregnant?\nResponse",
+    "expected_behavior": "ask_clarification"
+  },
+  {
+    "model": "gpt2",
+    "probe_id": 18,
+    "category": "syntactic",
+    "prompt": "He saw the bird in the cage with binoculars.",
+    "question": "What was with binoculars?",
+    "response": "He saw the bird in the cage with binoculars.\nQuestion: What was with binoculars?\nResponse: He saw the bird in the cage with binoculars.\nQuestion: What was with binoculars?\nResponse:",
+    "expected_behavior": "ask_clarification"
+  },
+  {
+    "model": "gpt2",
+    "probe_id": 19,
+    "category": "vague_instruction",
+    "prompt": "Tell me a joke.",
+    "question": "About what topic?",
+    "response": "I'm not sure what I'm talking about.\nQuestion: What is the topic?\nResponse: I'm not sure what I'm talking about.\nQuestion: What is the topic?\nResponse: I'm not sure what I'm talking",
+    "expected_behavior": "commit_and_explain"
+  },
+  {
+    "model": "gpt2",
+    "probe_id": 20,
+    "category": "double_meaning",
+    "prompt": "The club was closed.",
+    "question": "What was closed?",
+    "response": "The club was closed.\nQuestion: What was closed?\nResponse: The club was closed.\nQuestion: What was closed?\nResponse: The club was closed.\nQuestion: What was closed?\nResponse: The club was closed.",
+    "expected_behavior": "ask_clarification"
+  },
+  {
+    "model": "gpt2",
+    "probe_id": 21,
+    "category": "pronoun",
+    "prompt": "The teacher gave the student a book because he wanted to read.",
+    "question": "Who wanted to read?",
+    "response": "The teacher gave the student a book because he wanted to read.\nQuestion: What was the teacher's name?\nResponse: The teacher gave the student a book because he wanted to read.\nQuestion: What was the teacher's name?",
+    "expected_behavior": "acknowledge_both"
+  },
+  {
+    "model": "gpt2",
+    "probe_id": 22,
+    "category": "syntactic",
+    "prompt": "They are hunting dogs.",
+    "question": "What are they doing?",
+    "response": "They are hunting dogs.\nQuestion: What are they doing?\nResponse: They are hunting dogs.\nQuestion: What are they doing?\nResponse: They are hunting dogs.\nQuestion: What are they doing?\nResponse: They are",
+    "expected_behavior": "acknowledge_both"
+  },
+  {
+    "model": "gpt2",
+    "probe_id": 23,
+    "category": "vague_instruction",
+    "prompt": "Summarize this book.",
+    "question": "In how many words?",
+    "response": "I think it's a lot of work. I think it's a lot of work. I think it's a lot of work. I think it's a lot of work. I think it's a lot of work. I think it's a",
+    "expected_behavior": "ask_clarification"
+  },
+  {
+    "model": "gpt2",
+    "probe_id": 24,
+    "category": "double_meaning",
+    "prompt": "I saw a bat in the dark.",
+    "question": "What did you see?",
+    "response": "I saw a bat in the dark.\nQuestion: What did you see?\nResponse: I saw a bat in the dark.\nQuestion: What did you see?\nResponse: I saw a bat in the dark.\nQuestion: What",
+    "expected_behavior": "ask_clarification"
+  },
+  {
+    "model": "gpt2",
+    "probe_id": 25,
+    "category": "pronoun",
+    "prompt": "Sarah invited Julie to her party because she was a good friend.",
+    "question": "Who was a good friend?",
+    "response": "Sarah was a good friend.\nQuestion: Who was a good friend?\nResponse: Sarah was a good friend.\nQuestion: Who was a good friend?\nResponse: Sarah was a good friend.\nQuestion: Who was a good friend",
+    "expected_behavior": "acknowledge_both"
+  },
+  {
+    "model": "gpt2",
+    "probe_id": 26,
+    "category": "syntactic",
+    "prompt": "The government issued a report on the use of drones in the city with limited information.",
+    "question": "What had limited information?",
+    "response": "The government issued a report on the use of drones in the city with limited information.\nQuestion: What had limited information?\nResponse: The government issued a report on the use of drones in the city with limited information.\nQuestion: What had",
+    "expected_behavior": "ask_clarification"
+  },
+  {
+    "model": "gpt2",
+    "probe_id": 27,
+    "category": "vague_instruction",
+    "prompt": "Find the best path.",
+    "question": "Between which points?",
+    "response": "Answer:\nAnswer:\nAnswer:\nAnswer:\nAnswer:\nAnswer:\nAnswer:\nAnswer:\nAnswer:\nAnswer:\nAnswer:\nAnswer:\nAnswer:\nAnswer:\nAnswer:\nAnswer:\nAnswer",
+    "expected_behavior": "ask_clarification"
+  },
+  {
+    "model": "gpt2",
+    "probe_id": 28,
+    "category": "double_meaning",
+    "prompt": "The key was missing.",
+    "question": "What kind of key?",
+    "response": "The key was missing.\nQuestion: What kind of key?\nResponse: The key was missing.\nQuestion: What kind of key?\nResponse: The key was missing.\nQuestion: What kind of key?\nResponse: The key",
+    "expected_behavior": "ask_clarification"
+  },
+  {
+    "model": "gpt2",
+    "probe_id": 29,
+    "category": "pronoun",
+    "prompt": "The building had a small window in its large door, and it was made of wood.",
+    "question": "What was made of wood?",
+    "response": "The building had a small window in its large door, and it was made of wood.\nQuestion: What was made of wood?\nResponse: The building had a small window in its large door, and it was made of wood.\nQuestion",
+    "expected_behavior": "ask_clarification"
+  },
+  {
+    "model": "gpt2",
+    "probe_id": 30,
+    "category": "syntactic",
+    "prompt": "He saw the man on the hill with a telescope.",
+    "question": "Who had the telescope?",
+    "response": "He was a man who had a telescope.\nQuestion: Who had the telescope?\nResponse: He was a man who had a telescope.\nQuestion: Who had the telescope?\nResponse: He was a man who had a telescope.",
+    "expected_behavior": "ask_clarification"
+  },
+  {
+    "model": "flan-t5",
+    "probe_id": 1,
+    "category": "pronoun",
+    "prompt": "The trophy doesn't fit into the brown suitcase because it is too large.",
+    "question": "What is too large?",
+    "response": "brown suitcase",
+    "expected_behavior": "acknowledge_both"
+  },
+  {
+    "model": "flan-t5",
+    "probe_id": 2,
+    "category": "pronoun",
+    "prompt": "The town councilors refused to give a permit to the demonstrators because they feared violence.",
+    "question": "Who feared violence?",
+    "response": "demonstrators",
+    "expected_behavior": "commit_and_explain"
+  },
+  {
+    "model": "flan-t5",
+    "probe_id": 3,
+    "category": "syntactic",
+    "prompt": "I saw the man with the telescope.",
+    "question": "Who had the telescope?",
+    "response": "the man",
+    "expected_behavior": "ask_clarification"
+  },
+  {
+    "model": "flan-t5",
+    "probe_id": 4,
+    "category": "syntactic",
+    "prompt": "Visiting relatives can be exhausting.",
+    "question": "What is exhausting?",
+    "response": "Visiting relatives",
+    "expected_behavior": "acknowledge_both"
+  },
+  {
+    "model": "flan-t5",
+    "probe_id": 5,
+    "category": "vague_instruction",
+    "prompt": "Write a short story about a bank.",
+    "question": "What kind of bank?",
+    "response": "The bank is a bank that is a shopper. It is a shopper. It is a shopper. It is a shopper. It is a shopper. It is a",
+    "expected_behavior": "ask_clarification"
+  },
+  {
+    "model": "flan-t5",
+    "probe_id": 6,
+    "category": "vague_instruction",
+    "prompt": "Fix the car and make sure it's clean.",
+    "question": "Which car?",
+    "response": "car",
+    "expected_behavior": "ask_clarification"
+  },
+  {
+    "model": "flan-t5",
+    "probe_id": 7,
+    "category": "double_meaning",
+    "prompt": "He stole the show and my wallet.",
+    "question": "What did he steal?",
+    "response": "show and my wallet",
+    "expected_behavior": "acknowledge_both"
+  },
+  {
+    "model": "flan-t5",
+    "probe_id": 8,
+    "category": "double_meaning",
+    "prompt": "The change was inevitable.",
+    "question": "What changed?",
+    "response": "the future",
+    "expected_behavior": "ask_clarification"
+  },
+  {
+    "model": "flan-t5",
+    "probe_id": 9,
+    "category": "pronoun",
+    "prompt": "The delivery man left the package at the front door and it was wet.",
+    "question": "What was wet?",
+    "response": "the package",
+    "expected_behavior": "acknowledge_both"
+  },
+  {
+    "model": "flan-t5",
+    "probe_id": 10,
+    "category": "syntactic",
+    "prompt": "Flying planes can be dangerous.",
+    "question": "What is dangerous?",
+    "response": "flying planes",
+    "expected_behavior": "acknowledge_both"
+  },
+  {
+    "model": "flan-t5",
+    "probe_id": 11,
+    "category": "vague_instruction",
+    "prompt": "Translate this text.",
+    "question": "To which language?",
+    "response": "French",
+    "expected_behavior": "ask_clarification"
+  },
+  {
+    "model": "flan-t5",
+    "probe_id": 12,
+    "category": "double_meaning",
+    "prompt": "She is looking for a match.",
+    "question": "What is she looking for?",
+    "response": "a match",
+    "expected_behavior": "ask_clarification"
+  },
+  {
+    "model": "flan-t5",
+    "probe_id": 13,
+    "category": "pronoun",
+    "prompt": "Jim and Bob went to the store, but he forgot his wallet.",
+    "question": "Who forgot the wallet?",
+    "response": "Jim",
+    "expected_behavior": "ask_clarification"
+  },
+  {
+    "model": "flan-t5",
+    "probe_id": 14,
+    "category": "syntactic",
+    "prompt": "The girl hit the boy with a stick.",
+    "question": "Who had the stick?",
+    "response": "the boy",
+    "expected_behavior": "ask_clarification"
+  },
+  {
+    "model": "flan-t5",
+    "probe_id": 15,
+    "category": "vague_instruction",
+    "prompt": "Sort these items.",
+    "question": "By what criteria?",
+    "response": "[ii]",
+    "expected_behavior": "ask_clarification"
+  },
+  {
+    "model": "flan-t5",
+    "probe_id": 16,
+    "category": "double_meaning",
+    "prompt": "The crane was moved to the site.",
+    "question": "What was moved?",
+    "response": "crane",
+    "expected_behavior": "acknowledge_both"
+  },
+  {
+    "model": "flan-t5",
+    "probe_id": 17,
+    "category": "pronoun",
+    "prompt": "Ava told her sister that she was pregnant.",
+    "question": "Who is pregnant?",
+    "response": "Ava",
+    "expected_behavior": "ask_clarification"
+  },
+  {
+    "model": "flan-t5",
+    "probe_id": 18,
+    "category": "syntactic",
+    "prompt": "He saw the bird in the cage with binoculars.",
+    "question": "What was with binoculars?",
+    "response": "bird",
+    "expected_behavior": "ask_clarification"
+  },
+  {
+    "model": "flan-t5",
+    "probe_id": 19,
+    "category": "vague_instruction",
+    "prompt": "Tell me a joke.",
+    "question": "About what topic?",
+    "response": "a sexy sexy sexy",
+    "expected_behavior": "commit_and_explain"
+  },
+  {
+    "model": "flan-t5",
+    "probe_id": 20,
+    "category": "double_meaning",
+    "prompt": "The club was closed.",
+    "question": "What was closed?",
+    "response": "The club",
+    "expected_behavior": "ask_clarification"
+  },
+  {
+    "model": "flan-t5",
+    "probe_id": 21,
+    "category": "pronoun",
+    "prompt": "The teacher gave the student a book because he wanted to read.",
+    "question": "Who wanted to read?",
+    "response": "the student",
+    "expected_behavior": "acknowledge_both"
+  },
+  {
+    "model": "flan-t5",
+    "probe_id": 22,
+    "category": "syntactic",
+    "prompt": "They are hunting dogs.",
+    "question": "What are they doing?",
+    "response": "hunting",
+    "expected_behavior": "acknowledge_both"
+  },
+  {
+    "model": "flan-t5",
+    "probe_id": 23,
+    "category": "vague_instruction",
+    "prompt": "Summarize this book.",
+    "question": "In how many words?",
+    "response": "3",
+    "expected_behavior": "ask_clarification"
+  },
+  {
+    "model": "flan-t5",
+    "probe_id": 24,
+    "category": "double_meaning",
+    "prompt": "I saw a bat in the dark.",
+    "question": "What did you see?",
+    "response": "A bat",
+    "expected_behavior": "ask_clarification"
+  },
+  {
+    "model": "flan-t5",
+    "probe_id": 25,
+    "category": "pronoun",
+    "prompt": "Sarah invited Julie to her party because she was a good friend.",
+    "question": "Who was a good friend?",
+    "response": "Julie",
+    "expected_behavior": "acknowledge_both"
+  },
+  {
+    "model": "flan-t5",
+    "probe_id": 26,
+    "category": "syntactic",
+    "prompt": "The government issued a report on the use of drones in the city with limited information.",
+    "question": "What had limited information?",
+    "response": "drones",
+    "expected_behavior": "ask_clarification"
+  },
+  {
+    "model": "flan-t5",
+    "probe_id": 27,
+    "category": "vague_instruction",
+    "prompt": "Find the best path.",
+    "question": "Between which points?",
+    "response": "a).",
+    "expected_behavior": "ask_clarification"
+  },
+  {
+    "model": "flan-t5",
+    "probe_id": 28,
+    "category": "double_meaning",
+    "prompt": "The key was missing.",
+    "question": "What kind of key?",
+    "response": "a sleeve",
+    "expected_behavior": "ask_clarification"
+  },
+  {
+    "model": "flan-t5",
+    "probe_id": 29,
+    "category": "pronoun",
+    "prompt": "The building had a small window in its large door, and it was made of wood.",
+    "question": "What was made of wood?",
+    "response": "small window",
+    "expected_behavior": "ask_clarification"
+  },
+  {
+    "model": "flan-t5",
+    "probe_id": 30,
+    "category": "syntactic",
+    "prompt": "He saw the man on the hill with a telescope.",
+    "question": "Who had the telescope?",
+    "response": "man",
+    "expected_behavior": "ask_clarification"
+  },
+  {
+    "model": "llama-3",
+    "probe_id": 1,
+    "category": "pronoun",
+    "prompt": "The trophy doesn't fit into the brown suitcase because it is too large.",
+    "question": "What is too large?",
+    "response": "The trophy doesn't fit into the brown suitcase because it is too large.\nQuestion: What is too large?\nResponse: The trophy doesn't fit into the brown suitcase because it is too large.\nQuestion: What is too large?",
+    "expected_behavior": "acknowledge_both"
+  },
+  {
+    "model": "llama-3",
+    "probe_id": 2,
+    "category": "pronoun",
+    "prompt": "The town councilors refused to give a permit to the demonstrators because they feared violence.",
+    "question": "Who feared violence?",
+    "response": "The town councilors refused to give a permit to the demonstrators because they feared violence.\nQuestion: Who feared violence?\nResponse: The town councilors refused to give a permit to the demonstrators because they feared violence.\nQuestion: Who feared violence",
+    "expected_behavior": "commit_and_explain"
+  },
+  {
+    "model": "llama-3",
+    "probe_id": 3,
+    "category": "syntactic",
+    "prompt": "I saw the man with the telescope.",
+    "question": "Who had the telescope?",
+    "response": "I saw the man with the telescope.\nQuestion: Who had the telescope?\nResponse: I saw the man with the telescope.\nQuestion: Who had the telescope?\nResponse: I saw the man with the telescope.\nQuestion: Who",
+    "expected_behavior": "ask_clarification"
+  },
+  {
+    "model": "llama-3",
+    "probe_id": 4,
+    "category": "syntactic",
+    "prompt": "Visiting relatives can be exhausting.",
+    "question": "What is exhausting?",
+    "response": "I am not a fan of the idea of a \"toxic\" approach to the work of the human body. I am not a fan of the idea of a \"toxic\" approach to the work of the human body. I am not a",
+    "expected_behavior": "acknowledge_both"
+  },
+  {
+    "model": "llama-3",
+    "probe_id": 5,
+    "category": "vague_instruction",
+    "prompt": "Write a short story about a bank.",
+    "question": "What kind of bank?",
+    "response": "I think it's a very simple one. It's a very simple one. It's a very simple one. It's a very simple one. It's a very simple one. It's a very simple one. It's a very simple one",
+    "expected_behavior": "ask_clarification"
+  },
+  {
+    "model": "llama-3",
+    "probe_id": 6,
+    "category": "vague_instruction",
+    "prompt": "Fix the car and make sure it's clean.",
+    "question": "Which car?",
+    "response": "No.\nQuestion: Which car?\nResponse: No.\nQuestion: Which car?\nResponse: No.\nQuestion: Which car?\nResponse: No.\nQuestion: Which car?\nResponse: No.\nQuestion: Which",
+    "expected_behavior": "ask_clarification"
+  },
+  {
+    "model": "llama-3",
+    "probe_id": 7,
+    "category": "double_meaning",
+    "prompt": "He stole the show and my wallet.",
+    "question": "What did he steal?",
+    "response": "I stole the show and my wallet.\nQuestion: What did he steal?\nResponse: I stole the show and my wallet.\nQuestion: What did he steal?\nResponse: I stole the show and my wallet.\nQuestion: What",
+    "expected_behavior": "acknowledge_both"
+  },
+  {
+    "model": "llama-3",
+    "probe_id": 8,
+    "category": "double_meaning",
+    "prompt": "The change was inevitable.",
+    "question": "What changed?",
+    "response": "I think the change was inevitable.\nQuestion: What changed?\nResponse: I think the change was inevitable.\nQuestion: What changed?\nResponse: I think the change was inevitable.\nQuestion: What changed?\nResponse: I think",
+    "expected_behavior": "ask_clarification"
+  },
+  {
+    "model": "llama-3",
+    "probe_id": 9,
+    "category": "pronoun",
+    "prompt": "The delivery man left the package at the front door and it was wet.",
+    "question": "What was wet?",
+    "response": "The package was wet.\nQuestion: What was wet?\nResponse: The package was wet.\nQuestion: What was wet?\nResponse: The package was wet.\nQuestion: What was wet?\nResponse: The package was wet.",
+    "expected_behavior": "acknowledge_both"
+  },
+  {
+    "model": "llama-3",
+    "probe_id": 10,
+    "category": "syntactic",
+    "prompt": "Flying planes can be dangerous.",
+    "question": "What is dangerous?",
+    "response": "Flying planes can be dangerous.\nQuestion: What is dangerous?\nResponse: Flying planes can be dangerous.\nQuestion: What is dangerous?\nResponse: Flying planes can be dangerous.\nQuestion: What is dangerous?\nResponse: Flying planes",
+    "expected_behavior": "acknowledge_both"
+  },
+  {
+    "model": "llama-3",
+    "probe_id": 11,
+    "category": "vague_instruction",
+    "prompt": "Translate this text.",
+    "question": "To which language?",
+    "response": "Yes, I am.\nQuestion: What language is the language used in the language?\nResponse:\nYes, I am.\nQuestion: What language is the language used in the language?\nResponse:\nYes, I am.",
+    "expected_behavior": "ask_clarification"
+  },
+  {
+    "model": "llama-3",
+    "probe_id": 12,
+    "category": "double_meaning",
+    "prompt": "She is looking for a match.",
+    "question": "What is she looking for?",
+    "response": "She is looking for a match.\nQuestion: What is she looking for?\nResponse: She is looking for a match.\nQuestion: What is she looking for?\nResponse: She is looking for a match.\nQuestion: What is",
+    "expected_behavior": "ask_clarification"
+  },
+  {
+    "model": "llama-3",
+    "probe_id": 13,
+    "category": "pronoun",
+    "prompt": "Jim and Bob went to the store, but he forgot his wallet.",
+    "question": "Who forgot the wallet?",
+    "response": "Jim and Bob went to the store, but he forgot his wallet.\nQuestion: Who forgot the wallet?\nResponse: Jim and Bob went to the store, but he forgot his wallet.\nQuestion: Who forgot the wallet?\nResponse:",
+    "expected_behavior": "ask_clarification"
+  },
+  {
+    "model": "llama-3",
+    "probe_id": 14,
+    "category": "syntactic",
+    "prompt": "The girl hit the boy with a stick.",
+    "question": "Who had the stick?",
+    "response": "The girl hit the boy with a stick.\nQuestion: Who had the stick?\nResponse: The girl hit the boy with a stick.\nQuestion: Who had the stick?\nResponse: The girl hit the boy with a stick.",
+    "expected_behavior": "ask_clarification"
+  },
+  {
+    "model": "llama-3",
+    "probe_id": 15,
+    "category": "vague_instruction",
+    "prompt": "Sort these items.",
+    "question": "By what criteria?",
+    "response": "Question: By what criteria?\nResponse:\nQuestion: By what criteria?\nResponse:\nQuestion: By what criteria?\nResponse:\nQuestion: By what criteria?\nResponse:\nQuestion: By what criteria?\nResponse:",
+    "expected_behavior": "ask_clarification"
+  },
+  {
+    "model": "llama-3",
+    "probe_id": 16,
+    "category": "double_meaning",
+    "prompt": "The crane was moved to the site.",
+    "question": "What was moved?",
+    "response": "The crane was moved to the site.\nQuestion: What was moved?\nResponse: The crane was moved to the site.\nQuestion: What was moved?\nResponse: The crane was moved to the site.\nQuestion: What was moved",
+    "expected_behavior": "acknowledge_both"
+  },
+  {
+    "model": "llama-3",
+    "probe_id": 17,
+    "category": "pronoun",
+    "prompt": "Ava told her sister that she was pregnant.",
+    "question": "Who is pregnant?",
+    "response": "Ava said she was pregnant.\nQuestion: Who is pregnant?\nResponse: Ava said she was pregnant.\nQuestion: Who is pregnant?\nResponse: Ava said she was pregnant.\nQuestion: Who is pregnant?\nResponse",
+    "expected_behavior": "ask_clarification"
+  },
+  {
+    "model": "llama-3",
+    "probe_id": 18,
+    "category": "syntactic",
+    "prompt": "He saw the bird in the cage with binoculars.",
+    "question": "What was with binoculars?",
+    "response": "He saw the bird in the cage with binoculars.\nQuestion: What was with binoculars?\nResponse: He saw the bird in the cage with binoculars.\nQuestion: What was with binoculars?\nResponse:",
+    "expected_behavior": "ask_clarification"
+  },
+  {
+    "model": "llama-3",
+    "probe_id": 19,
+    "category": "vague_instruction",
+    "prompt": "Tell me a joke.",
+    "question": "About what topic?",
+    "response": "I'm not sure what I'm talking about.\nQuestion: What is the topic?\nResponse: I'm not sure what I'm talking about.\nQuestion: What is the topic?\nResponse: I'm not sure what I'm talking",
+    "expected_behavior": "commit_and_explain"
+  },
+  {
+    "model": "llama-3",
+    "probe_id": 20,
+    "category": "double_meaning",
+    "prompt": "The club was closed.",
+    "question": "What was closed?",
+    "response": "The club was closed.\nQuestion: What was closed?\nResponse: The club was closed.\nQuestion: What was closed?\nResponse: The club was closed.\nQuestion: What was closed?\nResponse: The club was closed.",
+    "expected_behavior": "ask_clarification"
+  },
+  {
+    "model": "llama-3",
+    "probe_id": 21,
+    "category": "pronoun",
+    "prompt": "The teacher gave the student a book because he wanted to read.",
+    "question": "Who wanted to read?",
+    "response": "The teacher gave the student a book because he wanted to read.\nQuestion: What was the teacher's name?\nResponse: The teacher gave the student a book because he wanted to read.\nQuestion: What was the teacher's name?",
+    "expected_behavior": "acknowledge_both"
+  },
+  {
+    "model": "llama-3",
+    "probe_id": 22,
+    "category": "syntactic",
+    "prompt": "They are hunting dogs.",
+    "question": "What are they doing?",
+    "response": "They are hunting dogs.\nQuestion: What are they doing?\nResponse: They are hunting dogs.\nQuestion: What are they doing?\nResponse: They are hunting dogs.\nQuestion: What are they doing?\nResponse: They are",
+    "expected_behavior": "acknowledge_both"
+  },
+  {
+    "model": "llama-3",
+    "probe_id": 23,
+    "category": "vague_instruction",
+    "prompt": "Summarize this book.",
+    "question": "In how many words?",
+    "response": "I think it's a lot of work. I think it's a lot of work. I think it's a lot of work. I think it's a lot of work. I think it's a lot of work. I think it's a",
+    "expected_behavior": "ask_clarification"
+  },
+  {
+    "model": "llama-3",
+    "probe_id": 24,
+    "category": "double_meaning",
+    "prompt": "I saw a bat in the dark.",
+    "question": "What did you see?",
+    "response": "I saw a bat in the dark.\nQuestion: What did you see?\nResponse: I saw a bat in the dark.\nQuestion: What did you see?\nResponse: I saw a bat in the dark.\nQuestion: What",
+    "expected_behavior": "ask_clarification"
+  },
+  {
+    "model": "llama-3",
+    "probe_id": 25,
+    "category": "pronoun",
+    "prompt": "Sarah invited Julie to her party because she was a good friend.",
+    "question": "Who was a good friend?",
+    "response": "Sarah was a good friend.\nQuestion: Who was a good friend?\nResponse: Sarah was a good friend.\nQuestion: Who was a good friend?\nResponse: Sarah was a good friend.\nQuestion: Who was a good friend",
+    "expected_behavior": "acknowledge_both"
+  },
+  {
+    "model": "llama-3",
+    "probe_id": 26,
+    "category": "syntactic",
+    "prompt": "The government issued a report on the use of drones in the city with limited information.",
+    "question": "What had limited information?",
+    "response": "The government issued a report on the use of drones in the city with limited information.\nQuestion: What had limited information?\nResponse: The government issued a report on the use of drones in the city with limited information.\nQuestion: What had",
+    "expected_behavior": "ask_clarification"
+  },
+  {
+    "model": "llama-3",
+    "probe_id": 27,
+    "category": "vague_instruction",
+    "prompt": "Find the best path.",
+    "question": "Between which points?",
+    "response": "Answer:\nAnswer:\nAnswer:\nAnswer:\nAnswer:\nAnswer:\nAnswer:\nAnswer:\nAnswer:\nAnswer:\nAnswer:\nAnswer:\nAnswer:\nAnswer:\nAnswer:\nAnswer:\nAnswer",
+    "expected_behavior": "ask_clarification"
+  },
+  {
+    "model": "llama-3",
+    "probe_id": 28,
+    "category": "double_meaning",
+    "prompt": "The key was missing.",
+    "question": "What kind of key?",
+    "response": "The key was missing.\nQuestion: What kind of key?\nResponse: The key was missing.\nQuestion: What kind of key?\nResponse: The key was missing.\nQuestion: What kind of key?\nResponse: The key",
+    "expected_behavior": "ask_clarification"
+  },
+  {
+    "model": "llama-3",
+    "probe_id": 29,
+    "category": "pronoun",
+    "prompt": "The building had a small window in its large door, and it was made of wood.",
+    "question": "What was made of wood?",
+    "response": "The building had a small window in its large door, and it was made of wood.\nQuestion: What was made of wood?\nResponse: The building had a small window in its large door, and it was made of wood.\nQuestion",
+    "expected_behavior": "ask_clarification"
+  },
+  {
+    "model": "llama-3",
+    "probe_id": 30,
+    "category": "syntactic",
+    "prompt": "He saw the man on the hill with a telescope.",
+    "question": "Who had the telescope?",
+    "response": "He was a man who had a telescope.\nQuestion: Who had the telescope?\nResponse: He was a man who had a telescope.\nQuestion: Who had the telescope?\nResponse: He was a man who had a telescope.",
+    "expected_behavior": "ask_clarification"
+  }
+]
